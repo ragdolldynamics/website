@@ -2,6 +2,12 @@
 
 The Ragsite
 
+## Prerequisites
+
+Node and npm is required, if you don't already have it:
+
+https://www.npmjs.com/get-npm
+
 ## Getting Set Up
 
 `gulp` is required to build the site. Install by typing:
