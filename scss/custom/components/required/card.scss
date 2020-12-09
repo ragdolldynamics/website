@@ -6,6 +6,16 @@
 
 .card{
   margin-bottom: $spacer;
+  &--pricing {
+    color:#fff;
+    border: 1px solid #7BCFB3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  &--heading {
+    color:#fff;
+  }
   &.card-sm{
     &.card-body{
       padding: $spacer;
