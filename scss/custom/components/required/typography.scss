@@ -39,6 +39,9 @@ h5,.h5{
 
 .display-1, .display-2, .display-3, .display-4{
   color: $headings-color;
+  &--white{
+    color:#fff;
+  }
 }
 
 .display-1, .display-2, .display-3, .display-4{
