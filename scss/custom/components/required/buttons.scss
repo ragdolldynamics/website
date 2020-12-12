@@ -65,16 +65,16 @@
 }
 
 .btn-white{
-  background: $white;
-  color: theme-color('primary');
+  background: $theme-salmon;
+  color: theme-color('primary-2');
   > .icon{
     path{
-      fill: theme-color('primary');
+      fill: theme-color('primary-2');
     }
   }
   &:hover{
-    color: theme-color('primary');
-    background: rgba(255,255,255,.9);
+    color: theme-color('primary-2');
+    background: lighten($theme-salmon, 5%);
   }
 }
 
