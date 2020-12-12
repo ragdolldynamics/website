@@ -33,6 +33,7 @@ img.bg-image{
 }
 
 .bg-ragdoll{
-  background-image: url("../img/ragdoll-background.png");
-  background-size:cover;
+  background-image: url("/assets/img/ragdoll-background.png");
+  background-size: cover;
+  padding-top: 150px !important;
 }

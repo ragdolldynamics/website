@@ -4,8 +4,6 @@
 //
 //
 
-@import "CSS:../../components/plugins/inter-ui";
-
 html{
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -76,9 +74,9 @@ h6{
 }
 
 a{
-  font-weight: 600;
+  font-weight: 500;
   &.lead{
-    font-weight: 600;
+    font-weight: 500;
   }
   color: theme-color('primary');
 }

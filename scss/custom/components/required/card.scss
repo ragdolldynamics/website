@@ -8,10 +8,24 @@
   margin-bottom: $spacer;
   &--pricing {
     color:#fff;
-    border: 1px solid #7BCFB3;
+    border: 1px solid $theme-green;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: transparent;
+
+    &:hover {
+      background-color: $theme-green;
+      color: #fff;
+
+      > * {
+        color: #fff;
+      }
+
+      .btn-green {
+        background-color: #fff;
+        color: $theme-green;
+      }
+    }
   }
   &--heading {
     color:#fff;
@@ -62,7 +76,7 @@
 }
 
 a.card{
-  color: $body-color;
+  color: #fff;
   font-weight: $font-weight-normal;
   transition: all $transition-time-fast ease;
   &[class*='hover-shadow']{

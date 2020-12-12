@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>Ragdoll Dynamics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A corporate Bootstrap theme by Medium Rare">
+    <meta name="description" content="Ragdoll Dynamics">
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body data-smooth-scroll-offset="73">
+
+  <body data-smooth-scroll-offset="73" id="page">
     <div class="loader">
       <div class="loading-animation"></div>
     </div>
@@ -19,7 +20,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
         <div class="container">
           <a class="navbar-brand fade-page" href="index.html">
-            <img src="assets/img/logo-white.svg" alt="Leap">
+            <img src="/assets/img/logo.png" class="logo" alt="Ragdoll">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
@@ -29,16 +30,16 @@
             <div class="py-2 py-lg-0">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="/" class="nav-link">Home</a>
+                  <a href="/" class="nav-link text-blue">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/" class="nav-link">Learn</a>
+                  <a href="/" class="nav-link text-gold">Learn</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pricing.html" class="nav-link">Pricing</a>
+                  <a href="/pricing.html" class="nav-link text-white">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/contact.html" class="nav-link">Contact</a>
+                  <a href="/contact.html" class="nav-link text-rust">Contact</a>
                 </li>
               </ul>
             </div><a href="#" class="btn btn-white ml-lg-3">Download</a>
@@ -50,23 +51,22 @@
 
     <section class="bg-ragdoll has-divider">
       <div class="container">
-        <div class="row justify-content-center  mb-6 text-light">
+        <div class="row justify-content-center mb-2 text-light">
           <div class="col-xl-8 col-lg-9">
-            <h2 class="display-4 display-4--white mx-xl-6">Pricing</h2>
+            <h2 class="mx-xl-6">Pricing</h2>
           </div>
         </div>
         <div class="row mb-4">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card--pricing card card-body ">
-              <div class="pt-md-2">
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" class="card--pricing card card-body ">
+              <div class="">
                 <h4 class="card--heading">Non-Commercial</h4>
               </div>
-              <div class="d-flex align-items-start pb-md-2">
-                <span class="h3 card--heading">£</span>
-                <span class="display-4 display-4--white mb-0 card--heading">0</span>
+              <div class="d-flex align-items-start pb-2">
+                <span class="display-4 display-4--white mb-0 card--heading">£0</span>
               </div>
 
-              <ul class=" list-unstyled my-2 my-md-4">
+              <ul class="dash-list mb-6">
                 <li class="py-1">
                   <span>For learning and testing and home</span>
                 </li>
@@ -77,21 +77,19 @@
                   <span>All Enterprise features</span>
                 </li>
               </ul>
-              <a href="#" class="btn btn-outline-primary">Sign Up</a>
-            </div>
+              <div class="btn-aligner"><div class="btn btn-green">Sign Up</div></div>
+            </a>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card  card--pricing card-body shadow-3d">
-              <span class="badge badge-top badge-dark">Most Popular</span>
-              <div class="pt-md-2">
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" class="card--pricing card card-body ">
+              <div class="">
                 <h4 class="card--heading">Standard</h4>
               </div>
-              <div class="d-flex align-items-start pb-md-2">
-                <span class="h3 card--heading">£</span>
-                <span class="display-4 display-4--white mb-0">499</span>
+              <div class="d-flex align-items-start pb-2">
+                <span class="display-4 display-4--white mb-0">£499</span>
               </div>
 
-              <ul class=" list-unstyled my-2 my-md-4">
+              <ul class="dash-list mb-6">
                 <li class="py-1">
                   <span>For small studios and freelancers</span>
                 </li>
@@ -103,20 +101,19 @@
                 </li>
 
               </ul>
-              <a href="#" class="btn btn-primary">Sign up</a>
-            </div>
+              <div class="btn-aligner"><div class="btn btn-green">Sign up</div></div>
+            </a>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card--pricing card card-body ">
-              <div class="pt-md-2">
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" class="card--pricing card card-body ">
+              <div class="">
                 <h4 class="card--heading">Enterprise</h4>
               </div>
-              <div class="d-flex align-items-start pb-md-2">
-                <span class="h3 card--heading">£</span>
-                <span class="display-4 display-4--white mb-0">1299</span>
+              <div class="d-flex align-items-start pb-2">
+                <span class="display-4 display-4--white mb-0">£1299</span>
               </div>
 
-              <ul class=" list-unstyled my-2 my-md-4">
+              <ul class="dash-list mb-6">
                 <li class="py-1">
                   <span>For big studios and enthusiasts</span>
                 </li>
@@ -129,23 +126,21 @@
                 <li class="py-1">
                   <span>Multi-threading and GPU acceleration</span>
                 </li>
-                <li class="py-1">
 
               </ul>
-              <a href="#" class="btn btn-outline-primary">Sign up</a>
-            </div>
+              <div class="btn-aligner"><div class="btn btn-green">Sign up</div></div>
+            </a>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="card--pricing card card-body ">
-              <div class="pt-md-2">
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <a href="#" class="card--pricing card card-body ">
+              <div class="">
                 <h4 class="card--heading">Network</h4>
               </div>
-              <div class="d-flex align-items-start pb-md-2">
-                <span class="h3 card--heading">£</span>
-                <span class="display-4 display-4--white mb-0">199</span>
+              <div class="d-flex align-items-start pb-2">
+                <span class="display-4 display-4--white mb-0">£199</span>
               </div>
 
-              <ul class=" list-unstyled my-2 my-md-4">
+              <ul class="dash-list mb-6">
                 <li class="py-1">
                   <span>For render farms and offline caching </span>
                 </li>
@@ -155,17 +150,16 @@
                 <li class="py-1">
                   <span> No UI tools or Python support</span>
                 </li>
-                <li class="py-1">
               </ul>
-              <a href="#" class="btn btn-outline-primary">Sign up</a>
-            </div>
+              <div class="btn-aligner"><div class="btn btn-green">Sign up</div></div>
+            </a>
           </div>
         </div>
-        <div class="row text-light">
-          <div class="col ">
-            <span>If you have any queries about any of the pricing plans, or how <strong> Ragdoll Dynamics </strong> benefit you please get in touch:
-            </span>
+        <div class="text-light text-center pricing-queries">
+          <div class="mb-3">
+            If you have any queries about any of the pricing plans, or how Ragdoll Dynamics benefit you please get in touch:
           </div>
+          <a href="#" class="btn btn-green">Contact Us</a>
         </div>
       </div>
       <div class="divider">
@@ -175,63 +169,17 @@
 
 
 
-    <footer class="pb-4 bg-primary text-light" id="footer">
+    <footer class="pb-4 bg-primary text-light text-center" id="footer">
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-6 col-lg-3 col-xl-2">
-            <h5>Navigate</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Demos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Pages</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Elements</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg">
-            <h5>Contact</h5>
-            <ul class="list-unstyled">
-              <li class="mb-3 d-flex">
-                <img class="icon" src="assets/img/icons/theme/map/marker-1.svg" alt="marker-1 icon" data-inject-svg />
-                <div class="ml-3">
-                  <span>348 Greenpoint Avenue
-                    <br />Brooklyn, NY</span>
-                </div>
-              </li>
-              <li class="mb-3 d-flex">
-                <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon" data-inject-svg />
-                <div class="ml-3">
-                  <span>+61 3928 3324</span>
-                  <span class="d-block text-muted text-small">Mon - Fri 9am - 5pm</span>
-                </div>
-              </li>
-              <li class="mb-3 d-flex">
-                <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon" data-inject-svg />
-                <div class="ml-3">
-                  <a href="#">hello@company.io</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
         <div class="row justify-content-center mb-2">
           <div class="col-auto">
+            <img src="/assets/img/fulllogo.png" class="logo">
+            <a href="#" class="d-block text-blue mt-3 mb-2">info@ragdolldynamics.com</a>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-auto">
             <ul class="nav">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <img class="icon " src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
-                </a>
-              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <img class="icon " src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
@@ -244,20 +192,16 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <img class="icon " src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <img class="icon " src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                  <img class="icon " src="assets/img/icons/social/linkedin.svg" alt="linkedin social icon" data-inject-svg />
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col col-md-auto ">
-            <small class="text-muted">&copy;2020 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+          <div class="col col-md-auto mb-4">
+            <small>
+              &copy;2020 Ragdoll Dynamics. All Rights Reserved.
             </small>
           </div>
         </div>
