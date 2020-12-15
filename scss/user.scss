@@ -4,6 +4,8 @@
   .text-green { color: $theme-green; }
   .text-rust { color: $theme-rust; }
   .text-salmon { color: $theme-salmon; }
+  .text-grey { color: $theme-grey; }
+  .text-muted { color: #888 !important; }
   .text-white { color: #fff; }
 
   .bg-blue { background-color: $theme-blue; }
@@ -11,6 +13,18 @@
   .bg-green { background-color: $theme-green; }
   .bg-rust { background-color: $theme-rust; }
   .bg-salmon { background-color: $theme-salmon; }
+
+  .decoration svg {
+    path {
+      fill: #000000 !important;
+    }
+  }
+}
+
+#features .decoration svg, #exp .decoration svg {
+  path {
+    fill: $primary-2 !important;
+  }
 }
 
 .logo {
@@ -35,16 +49,68 @@
   }
 }
 
-.btn-rust {
-  background: $theme-rust;
-  color: #fff;
+.btn-green-dark {
+  background: $theme-green;
+  color: $primary;
   > .icon{
     path{
-      fill: #fff;
+      fill: $primary;
+    }
+  }
+  &:hover{
+    background: lighten($theme-green, 5%);
+  }
+}
+
+.btn-rust {
+  background: $theme-rust;
+  color: $primary;
+  > .icon{
+    path{
+      fill: $primary;
     }
   }
   &:hover{
     background: lighten($theme-rust, 5%);
+  }
+}
+
+.btn-gold {
+  background: $theme-gold;
+  color: $primary;
+  > .icon{
+    path{
+      fill: $primary;
+    }
+  }
+  &:hover{
+    background: lighten($theme-gold, 5%);
+  }
+}
+
+.btn-salmon {
+  background: $theme-salmon;
+  color: $primary;
+  > .icon{
+    path{
+      fill: $primary;
+    }
+  }
+  &:hover{
+    background: lighten($theme-salmon, 5%);
+  }
+}
+
+.btn-blue {
+  background: $theme-blue;
+  color: $primary;
+  > .icon{
+    path{
+      fill: $primary;
+    }
+  }
+  &:hover{
+    background: lighten($theme-blue, 5%);
   }
 }
 
@@ -60,9 +126,141 @@
     max-width: 550px;
     margin: 0 auto;
   }
+
+  a {
+    font-weight: 400;
+  }
 }
 
 .text-light .form-group > label {
   color: #fff;
   font-weight: 400;
+}
+
+#home {
+  background-image: url('/assets/img/video_bg.jpg');
+  background-size: cover;
+
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    max-width: 250px;
+  }
+}
+
+.home-lead {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+#examples {
+  .tab-content {
+
+    .tab-pane {
+      position: relative;
+    }
+
+    img {
+      max-width: 80%;
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+
+    .info {
+      position: absolute;
+      right: 0;
+      max-width: 360px;
+      top: 120px;
+
+      @media screen and (max-width: 768px) {
+        max-width: 250px;
+        top: 10px;
+      }
+      @media screen and (max-width: 500px) {
+        max-width: initial;
+        top: calc(100% + 30px);
+        right: auto;
+        left: 140px;
+      }
+    }
+
+    h6 {
+      font-size: 28px;
+      font-weight: 500;
+    }
+  }
+
+  .decoration.right {
+    right: -60px;
+  }
+}
+
+#examples-nav {
+  .nav-link:not(.active):not(.disabled):not(:hover) {
+    opacity: 1;
+
+    .btn-green-dark {
+      background: none;
+      color: $theme-green;
+      border: 1px solid $theme-green;
+    }
+    .btn-blue {
+      background: none;
+      color: $theme-blue;
+      border: 1px solid $theme-blue;
+    }
+    .btn-rust {
+      background: none;
+      color: $theme-rust;
+      border: 1px solid $theme-rust;
+    }
+    .btn-salmon {
+      background: none;
+      color: $theme-salmon;
+      border: 1px solid $theme-salmon;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .justify-content-center {
+      flex-direction: column;
+    }
+  }
+}
+
+#features {
+  p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+
+footer {
+  .nav-link:not(.active):not(.disabled):not(:hover) {
+    opacity: 1;
+  }
+}
+
+.top-15 {
+  top: 15%;
+}
+.top-8 {
+  top: 8%;
+}
+
+#learning {
+  .decoration {
+    bottom: -60px;
+    svg {
+      path {
+        fill: $primary-2 !important;
+      }
+    }
+  }
+}
+
+nav a.nav-link:hover, small > a:hover, a.text-blue:hover {
+  opacity: 0.8;
 }

@@ -3,13 +3,20 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Ragdoll Dynamics</title>
+    <title>Ragdoll Dynamics | Real-time physics for Autodesk Maya 2020</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ragdoll Dynamics">
+    <meta name="description" content="Ragdoll enables animators to work directly with live physics in their character rigs, at a 0-5 ms per frame performance impact.">
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202020">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
   </head>
 
   <body data-smooth-scroll-offset="73" id="page">
@@ -33,7 +40,7 @@
                   <a href="/" class="nav-link text-white">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/" class="nav-link text-gold">Learn</a>
+                  <a href="https://learn.ragdolldynamics.com/" class="nav-link text-gold">Learn</a>
                 </li>
                 <li class="nav-item">
                   <a href="/pricing.html" class="nav-link text-green">Pricing</a>
@@ -49,32 +56,19 @@
       </nav>
     </div>
 
-    <div data-overlay class="bg-primary text-light o-hidden position-relative">
-      <div class="position-absolute w-100 h-100 o-hidden top-0">
-        <div class="decoration right bottom scale-2">
-          <img class="bg-primary-2" src="assets/img/decorations/deco-blob-2.svg" alt="deco-blob-2 decoration" data-inject-svg />
-        </div>
-        <div class="decoration right bottom scale-3">
-          <img class="bg-white" src="assets/img/decorations/deco-dots-6.svg" alt="deco-dots-6 decoration" data-inject-svg />
-        </div>
-        <div class="decoration top left scale-2  d-none d-md-block">
-          <img class="bg-primary-3" src="assets/img/decorations/deco-blob-1.svg" alt="deco-blob-1 decoration" data-inject-svg />
-        </div>
-      </div>
-      <section class="min-vh-70 o-hidden d-flex flex-column justify-content-center">
+    <div data-overlay class="bg-primary-2 text-light o-hidden position-relative" id="home">
+      <section class="min-vh-50 o-hidden d-flex flex-column justify-content-center mb-6 pl-2 pl-sm-0">
         <div class="container">
-          <div class="row justify-content-center text-center align-items-center">
-            <div class="col-xl-8 col-lg-9 col-md-10 layer-3" data-aos="fade-up" data-aos-delay="500">
-              <h1 class="display-3">
-            Ragdoll<br>Dynamics
-          </h1>
-              <div class="mb-4">
-                <p class="lead px-xl-5">
+          <div class="row justify-content-center text-left align-items-center">
+            <div class="col-12 layer-3" data-aos="fade-up" data-aos-delay="500">
+              <img src="/assets/img/fulllogo.png" class="large-logo" alt="Ragdoll">
+              <div class="mt-3 mb-3">
+                <h1>
                   Real-time physics for Autodesk Maya 2020
-                </p>
+                </h1>
               </div>
-              <a href="#demos" class="btn btn-lg btn-white mx-1" data-smooth-scroll>View Demos</a>
-              <a href="#" class="btn btn-lg btn-primary-3 mx-1">Purchase</a>
+              <a href="#examples" class="btn btn-blue" data-smooth-scroll>Examples</a>
+              <a href="#features" class="btn btn-white mx-2" data-smooth-scroll>Features</a>
             </div>
           </div>
         </div>
@@ -84,339 +78,408 @@
       </div>
     </div>
 
-    <section class="bg-primary text-light has-divider">
+    <section class="bg-primary-2 text-light o-hidden has-divider" id="examples">
+      <div class="decoration-wrapper d-none d-lg-block">
+        <div class="decoration middle-y right" data-jarallax-element="50 0">
+          <img class="bg-primary" src="/assets/img/blob-5.svg" alt="decoration" data-inject-svg />
+        </div>
+      </div>
+
       <div class="container">
         <div class="row justify-content-center text-center mb-6">
           <div class="col-xl-8 col-lg-9">
-            <p class="lead">
-              Ragdoll enables animators to work directly with live physics in their character rigs, at a 0-5 ms per frame performance impact.
+            <p class="home-lead">
+              Ragdoll enables animators to <strong>work directly with live physics</strong> in their character rigs, at a 0-5 ms per frame performance impact.
             </p>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-xl-11" data-aos="fade-up">
             <div class="tab-content">
-              <div class="tab-pane fade show active" id="saas-tab-1" role="tabpanel" aria-labelledby="saas-tab-1">
-                <div class="popover-image">
-                  <div class="popover-hotspot bg-primary-2" style="top: 25%; left: 10%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
-                  <div class="popover-hotspot bg-primary-2" style="top: 10%; left: 90%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
-                  <div class="popover-hotspot bg-primary-2" style="top: 90%; left: 20%;" data-toggle="popover" title="Hotspot title" data-content="And here's some more amazing content. It's very engaging. Right?"></div>
-                  <img src="assets/img/saas-1.jpg" alt="Image" class="rounded border shadow-lg">
+              <div class="tab-pane fade show active" id="examples-tab-1" role="tabpanel" aria-labelledby="examples-tab-1">
+                <img src="/assets/img/examples-1.png" alt="Body">
+                <div class="info">
+                  <h6 class="text-green">Body</h6>
+                  <p class="text-green">Animate like it's 1999, or leverage <strong>Full Body Dynamics</strong> to automate the vast majority of overlapping animation that even respond to changes in environment and interacts with other characters. <strong>Your choice.</strong></p>
                 </div>
               </div>
-              <div class="tab-pane fade" id="saas-tab-2" role="tabpanel" aria-labelledby="saas-tab-2">
-                <div class="popover-image">
-                  <div class="popover-hotspot bg-primary-2" style="top: 25%; left: 90%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
-                  <div class="popover-hotspot bg-primary-2" style="top: 90%; left: 10%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
-                  <div class="popover-hotspot bg-primary-2" style="top: 30%; left: 60%;" data-toggle="popover" title="Hotspot title" data-content="And here's some more amazing content. It's very engaging. Right?"></div>
-                  <img src="assets/img/saas-2.jpg" alt="Image" class="rounded border shadow-lg">
+              <div class="tab-pane fade" id="examples-tab-2" role="tabpanel" aria-labelledby="examples-tab-2">
+                <img src="assets/img/examples-2.png" alt="Hair">
+                <div class="info">
+                  <h6 class="text-blue">Hair</h6>
+                  <p>Animate each individual strand, respond to the overall motion of the body and take care not to intersect. Or, <strong>animate with physically accurate hair in real-time</strong>. Your choice.</p>
                 </div>
               </div>
-              <div class="tab-pane fade" id="saas-tab-3" role="tabpanel" aria-labelledby="saas-tab-3">
-                <div class="popover-image">
-                  <div class="popover-hotspot bg-primary-2" style="top: 2%; left: 2%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
-                  <div class="popover-hotspot bg-primary-2" style="top: 35%; left: 95%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
-                  <div class="popover-hotspot bg-primary-2" style="top: 90%; left: 50%;" data-toggle="popover" title="Hotspot title" data-content="And here's some more amazing content. It's very engaging. Right?"></div>
-                  <img src="assets/img/saas-3.jpg" alt="Image" class="rounded border shadow-lg">
+              <div class="tab-pane fade" id="examples-tab-3" role="tabpanel" aria-labelledby="examples-tab-3">
+                <img src="assets/img/examples-3.png" alt="Cloth">
+                <div class="info">
+                  <h6 class="text-rust">Cloth</h6>
+                  <p>Imagine what cloth will eventually look like weeks after you’re finished animating, or work with it directly as you animate. <strong>Your choice.</strong></p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="examples-tab-4" role="tabpanel" aria-labelledby="examples-tab-4">
+                <img src="assets/img/examples-4.png" alt="Muscles">
+                <div class="info">
+                  <h6 class="text-salmon">Muscles</h6>
+                  <p>Suffer the performance impact of corrective blendshapes and pray that the subsequent muscle simulation won’t mess up the silhouette of your finished animation. Or, <strong>work with muscles directly as you animate</strong>. Your choice.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mt-3 mb-5" id="examples-nav">
           <div class="col-xl-11">
             <ul class="nav justify-content-center" role="tablist">
-              <li class="nav-item mx-1">
-                <a class="nav-link active" href="#saas-tab-1" data-toggle="tab" role="tab" aria-controls="saas-tab-1" aria-selected="true">
-                  <div class="icon-round icon-round-sm bg-primary">
-                    <img class="icon bg-primary" src="assets/img/icons/theme/shopping/box-2.svg" alt="box-2 icon" data-inject-svg />
-                  </div>
-                  Custom Dashboard
+              <li class="nav-item">
+                <a class="nav-link px-2 active" href="#examples-tab-1" data-toggle="tab" role="tab" aria-controls="examples-tab-1" aria-selected="true">
+                  <div class="btn btn-green-dark">Body</div>
                 </a>
               </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link" href="#saas-tab-2" data-toggle="tab" role="tab" aria-controls="saas-tab-2" aria-selected="false">
-                  <div class="icon-round icon-round-sm bg-primary">
-                    <img class="icon bg-primary" src="assets/img/icons/theme/shopping/chart-pie.svg" alt="chart-pie icon" data-inject-svg />
-                  </div>
-                  Smart Analytics
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#examples-tab-2" data-toggle="tab" role="tab" aria-controls="examples-tab-2" aria-selected="false">
+                  <div class="btn btn-blue">Hair</div>
                 </a>
               </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link" href="#saas-tab-3" data-toggle="tab" role="tab" aria-controls="saas-tab-3" aria-selected="false">
-                  <div class="icon-round icon-round-sm bg-primary">
-                    <img class="icon bg-primary" src="assets/img/icons/theme/design/saturation.svg" alt="saturation icon" data-inject-svg />
-                  </div>
-                  Dark Mode
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#examples-tab-3" data-toggle="tab" role="tab" aria-controls="examples-tab-3" aria-selected="false">
+                  <div class="btn btn-rust">Cloth</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#examples-tab-4" data-toggle="tab" role="tab" aria-controls="examples-tab-3" aria-selected="false">
+                  <div class="btn btn-salmon">Muscles</div>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-
       </div>
+
+      <div class="decoration-wrapper d-none d-lg-block">
+        <div class="decoration top" data-jarallax-element="-40 0">
+          <img class="bg-primary" src="/assets/img/blob-1.svg" alt="decoration" data-inject-svg />
+        </div>
+      </div>
+
       <div class="divider">
         <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
       </div>
     </section>
 
-    <section class="bg-primary-2 o-hidden has-divider">
-      <div class="container pb-4 text-light">
+    <section class="bg-primary-3 has-divider" id="features">
+      <div class="decoration-wrapper d-none d-lg-block">
+        <div class="decoration top-8 left" data-jarallax-element="20 0">
+          <img class="bg-primary-2" src="/assets/img/blob-3.svg" alt="decoration" data-inject-svg />
+        </div>
+      </div>
+
+      <div class="container pb-0 text-light">
         <div class="row justify-content-center text-center mb-6">
           <div class="col-xl-8 col-lg-9">
-            <h2 class="display-4 mx-xl-6">Features</h2>
+            <h2 class="mx-xl-6">Features</h2>
           </div>
         </div>
       </div>
-      <div class="controls-light arrows-inside highlight-selected mb-6" data-flickity='{ "autoPlay": true, "imagesLoaded": true, "wrapAround": true }'>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar avatar-lg">
+
+      <div class="container py-0">
+        <div class="controls-light controls-outside mb-6" data-flickity='{ "autoPlay": false, "imagesLoaded": true, "wrapAround": true, "groupCells": true }'>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-blue">Performance</h6>
+                <p class="text-white">
+                  0-5 ms/frame, <strong>from a single box to a full character</strong> with skeleton, hair, cloth and muscles running in parallel with native and interactive forwards and backwards caching, with additional support for Cached Playback in Maya 2020+.
+                </p>
+              </div>
             </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;I couldn’t have done it without the team from Leap.&rdquo;
-      </h4>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-1.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-green">Stability</h6>
+                <p class="text-white">
+                  <strong>Simulate anything</strong> from anatomically correct skeletons to complex mechanical contraptions.
+                </p>
+              </div>
             </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Benjamin Cameron</h6>
-              <span>Designer</span>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-2.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-grey">Collision Detection</h6>
+                <p class="text-white">
+                  Exactly what would would expect from any self-respecting <strong>physics solver.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-3.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-gold">Constraints</h6>
+                <p class="text-white">
+                  Point, Orient and Parent constraints; <strong>just like regular Maya constraints, except physical!</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-4.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-salmon">Rewind & Continue</h6>
+                <p class="text-white">
+                  Play forwards and backwards without ever having to worry about returning to frame 1. <strong>Suck on that, nCloth!</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-5.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-rust">Natural Forces</h6>
+                <p class="text-white">
+                  Push, Pull and Turbulence for <strong>perfect integration into any environment.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-6.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-blue">Active Control</h6>
+                <p class="text-white">
+                  Balance animation and physics with life-like control over <strong>“virtual muscles”</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-7.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-green">Anatomical Limits</h6>
+                <p class="text-white">
+                  <strong>Precise control</strong> over the angle each limb or chain can attain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-8.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-grey">Determinism</h6>
+                <p class="text-white">
+                  Trust that <strong>every playthrough is identical</strong> to the last, even on different machines and operating systems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+            <div class="d-flex">
+              <div class="process-circle"><img src="/assets/img/icon-9.svg"></div>
+              <div class="ml-2 mt-2">
+                <h6 class="text-gold">Python API</h6>
+                <p class="text-white">
+                  <strong>Precise integration</strong> into your pipeline with this first-class API, built with the fast and flexible cmdx.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/male-4.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;It covers all bases for a bootstrapped startup!&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Marco Origez</h6>
-              <span>Developer</span>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/female-4.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;I fell in love with the design immediately, the best.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Helen Shultz</h6>
-              <span>Business Owner</span>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/female-3.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;The team were very helpful, thrilled with Leap.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Annabelle Porter</h6>
-              <span>Designer</span>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/female-2.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;A fully-fledged design toolkit. I love this theme.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Gabby Kidman</h6>
-              <span>Business Owner</span>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/male-5.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;A beautifully detailed product without compromise.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Andrew Kingsman</h6>
-              <span>Business Owner</span>
-            </div>
-          </div>
-        </div>
+      </div>
+
+      <div class="text-center mb-6 pb-4">
+        <a href="/pricing.html" class="btn btn-green-dark">View Pricing</a>
       </div>
       <div class="divider">
         <img src="assets/img/dividers/divider-1.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
       </div>
     </section>
 
-    <section class="has-divider bg-primary text-light">
+    <section class="has-divider bg-primary text-light" id="exp">
+      <div class="decoration-wrapper d-none d-lg-block">
+        <div class="decoration right top-15" data-jarallax-element="-50 0">
+          <img class="bg-primary" src="/assets/img/blob-7.svg" alt="decoration" data-inject-svg />
+        </div>
+      </div>
+
       <div class="container">
         <div class="row justify-content-center text-center mb-6">
           <div class="col-xl-8 col-lg-9">
-            <h2 class="display-4 mx-xl-6">Our Experience</h2>
-            <p class="lead">
-              Boost productivity with BrowserSync. SCSS changes are reflected instantly and pages scroll and refresh on devices as you work.
+            <h2 class="mx-xl-6">Our Experience</h2>
+            <p class="home-lead">
+              Over the past ten years we’ve worked at <strong>world-renowned</strong> character animation studios, <strong>Academy award-winning</strong> visual effects and built <strong>custom software</strong> for over 50 film, TV and games studios.
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col">
-            <ul class="d-flex flex-wrap justify-content-center list-unstyled">
-              <li class="mx-2 mx-lg-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <img class="icon bg-primary-3 icon-lg opacity-20" src="assets/img/logos/developer/bootstrap.svg" alt="bootstrap brand logo large icon" data-inject-svg />
-              </li>
-              <li class="mx-2 mx-lg-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                <img class="icon bg-primary-3 icon-lg opacity-20" src="assets/img/logos/developer/sass.svg" alt="sass brand logo large icon" data-inject-svg />
-              </li>
-              <li class="mx-2 mx-lg-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                <img class="icon bg-primary-3 icon-lg opacity-20" src="assets/img/logos/developer/gulp.svg" alt="gulp brand logo large icon" data-inject-svg />
-              </li>
-              <li class="mx-2 mx-lg-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="400">
-                <img class="icon bg-primary-3 icon-lg opacity-20" src="assets/img/logos/developer/browsersync.svg" alt="browsersync brand logo large icon" data-inject-svg />
-              </li>
-              <li class="mx-2 mx-lg-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="500">
-                <img class="icon bg-primary-3 icon-lg opacity-20" src="assets/img/logos/developer/npm.svg" alt="npm brand logo large icon" data-inject-svg />
-              </li>
-            </ul>
+            <img class="px-0 px-md-3" src="/assets/img/exp1.png" alt="Brand">
+          </div>
+          <div class="col">
+            <img class="px-0 px-md-3" src="/assets/img/exp2.png" alt="Brand">
+          </div>
+          <div class="col">
+            <img class="px-0 px-md-3" src="/assets/img/exp3.png" alt="Brand">
+          </div>
+          <div class="col">
+            <img class="px-0 px-md-3" src="/assets/img/exp1.png" alt="Brand">
+          </div>
+          <div class="col">
+            <img class="px-0 px-md-3" src="/assets/img/exp2.png" alt="Brand">
+          </div>
           </div>
         </div>
+      </div>
+      <div class="text-center mb-6 pb-3">
+        <a href="/contact.html" class="btn btn-rust">Contact Us</a>
       </div>
       <div class="divider">
         <img src="assets/img/dividers/divider-2.svg" alt="divider graphic" data-inject-svg />
       </div>
     </section>
 
-    <section class="bg-primary-2 o-hidden has-divider">
+    <section class="bg-primary-3 o-hidden has-divider" id="learning">
+      <div class="decoration-wrapper d-none d-lg-block">
+        <div class="decoration bottom left" data-jarallax-element="-40 0">
+          <img class="bg-primary" src="/assets/img/blob-6.svg" alt="decoration" data-inject-svg />
+        </div>
+      </div>
+
       <div class="container pb-4 text-light">
         <div class="row justify-content-center text-center mb-6">
           <div class="col-xl-8 col-lg-9">
-            <h2 class="display-4 mx-xl-6">Learning Material</h2>
-            <p class="lead">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
-            </p>
+            <h2 class="mx-xl-6">Learning Material</h2>
           </div>
         </div>
       </div>
-      <div class="controls-light arrows-inside highlight-selected mb-6" data-flickity='{ "autoPlay": true, "imagesLoaded": true, "wrapAround": true }'>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;I couldn’t have done it without the team from Leap.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Benjamin Cameron</h6>
-              <span>Designer</span>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/male-4.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;It covers all bases for a bootstrapped startup!&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Marco Origez</h6>
-              <span>Developer</span>
+      <div class="container py-0">
+        <div class="controls-light controls-outside mb-6" data-flickity='{ "autoPlay": false, "imagesLoaded": true, "wrapAround": true, "groupCells": true }'>
+          <div class="carousel-cell col-xl-6 col-lg-6 col-md-12 col-12 pb-1">
+            <div class="card card-body justify-content-between bg-primary text-light border-0">
+               <img src="/assets/img/video-1.jpg" alt="Image" class="bg-image">
+               <div class="d-flex justify-content-between mb-3 position-relative">
+                  <div class="text-small d-flex">
+                     <div class="mr-2">
+                        <a href="#">Video</a>
+                     </div>
+                     <span class="opacity-40 font-weight-normal">8 October 2020</span>
+                  </div>
+                  <span class="text-gold">
+                    <img class="icon " src="/assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                  </span>
+               </div>
+               <div class="d-flex position-relative">
+                  <a href="#" class="btn btn-gold btn-round btn-lg flex-shrink-0">
+                    <img class="icon " src="/assets/img/icons/theme/media/play.svg" alt="play" data-inject-svg />
+                  </a>
+                  <div class="ml-3">
+                     <a href="#">
+                        <h4 class="mb-1">Ragdoll Tutorial 1 - Basics</h4>
+                     </a>
+                     <span class="text-small opacity-40 font-weight-normal">– 1min</span>
+                  </div>
+               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/female-4.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;I fell in love with the design immediately, the best.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Helen Shultz</h6>
-              <span>Business Owner</span>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/female-3.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;The team were very helpful, thrilled with Leap.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Annabelle Porter</h6>
-              <span>Designer</span>
+
+          <div class="carousel-cell col-xl-6 col-lg-6 col-md-12 col-12 pb-1">
+            <div class="card card-body justify-content-between bg-primary text-light border-0">
+               <img src="/assets/img/video-2.jpg" alt="Image" class="bg-image">
+               <div class="d-flex justify-content-between mb-3 position-relative">
+                  <div class="text-small d-flex">
+                     <div class="mr-2">
+                        <a href="#">Video</a>
+                     </div>
+                     <span class="opacity-40 font-weight-normal">8 October 2020</span>
+                  </div>
+                  <span class="text-gold">
+                    <img class="icon " src="/assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                  </span>
+               </div>
+               <div class="d-flex position-relative">
+                  <a href="#" class="btn btn-gold btn-round btn-lg flex-shrink-0">
+                    <img class="icon " src="/assets/img/icons/theme/media/play.svg" alt="play" data-inject-svg />
+                  </a>
+                  <div class="ml-3">
+                     <a href="#">
+                        <h4 class="mb-1">Ragdoll Tutorial 2 - Joints</h4>
+                     </a>
+                     <span class="text-small opacity-40 font-weight-normal">– 1min</span>
+                  </div>
+               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/female-2.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;A fully-fledged design toolkit. I love this theme.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Gabby Kidman</h6>
-              <span>Business Owner</span>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell col-xl-3 col-lg-4 col-md-5 col-9 pb-1">
-          <div class="card card-body">
-            <div class="mb-3 mb-md-4">
-              <img src="assets/img/avatars/male-5.jpg" alt="Avatar" class="avatar avatar-lg">
-            </div>
-            <div class="flex-grow-1 pt-md-3">
-              <h4>
-          &ldquo;A beautifully detailed product without compromise.&rdquo;
-      </h4>
-            </div>
-            <div class="avatar-author d-block mt-2">
-              <h6>Andrew Kingsman</h6>
-              <span>Business Owner</span>
+
+          <div class="carousel-cell col-xl-6 col-lg-6 col-md-12 col-12 pb-1">
+            <div class="card card-body justify-content-between bg-primary text-light border-0">
+               <img src="/assets/img/video-1.jpg" alt="Image" class="bg-image">
+               <div class="d-flex justify-content-between mb-3 position-relative">
+                  <div class="text-small d-flex">
+                     <div class="mr-2">
+                        <a href="#">Video</a>
+                     </div>
+                     <span class="opacity-40 font-weight-normal">8 October 2020</span>
+                  </div>
+                  <span class="text-gold">
+                    <img class="icon " src="/assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                  </span>
+               </div>
+               <div class="d-flex position-relative">
+                  <a href="#" class="btn btn-gold btn-round btn-lg flex-shrink-0">
+                    <img class="icon " src="/assets/img/icons/theme/media/play.svg" alt="play" data-inject-svg />
+                  </a>
+                  <div class="ml-3">
+                     <a href="#">
+                        <h4 class="mb-1">Ragdoll Tutorial 1 - Basics</h4>
+                     </a>
+                     <span class="text-small opacity-40 font-weight-normal">– 1min</span>
+                  </div>
+               </div>
             </div>
           </div>
+
+          <div class="carousel-cell col-xl-6 col-lg-6 col-md-12 col-12 pb-1">
+            <div class="card card-body justify-content-between bg-primary text-light border-0">
+               <img src="/assets/img/video-2.jpg" alt="Image" class="bg-image">
+               <div class="d-flex justify-content-between mb-3 position-relative">
+                  <div class="text-small d-flex">
+                     <div class="mr-2">
+                        <a href="#">Video</a>
+                     </div>
+                     <span class="opacity-40 font-weight-normal">8 October 2020</span>
+                  </div>
+                  <span class="text-gold">
+                    <img class="icon " src="/assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                  </span>
+               </div>
+               <div class="d-flex position-relative">
+                  <a href="#" class="btn btn-gold btn-round btn-lg flex-shrink-0">
+                    <img class="icon " src="/assets/img/icons/theme/media/play.svg" alt="play" data-inject-svg />
+                  </a>
+                  <div class="ml-3">
+                     <a href="#">
+                        <h4 class="mb-1">Ragdoll Tutorial 2 - Joints</h4>
+                     </a>
+                     <span class="text-small opacity-40 font-weight-normal">– 1min</span>
+                  </div>
+               </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+      <div class="text-center mb-6 pb-5">
+        <a href="https://learn.ragdolldynamics.com/" class="btn btn-gold">View All Tutorials</a>
       </div>
       <div class="divider">
         <img src="assets/img/dividers/divider-3.svg" alt="graphical divider" data-inject-svg />
@@ -430,24 +493,24 @@
         <div class="row justify-content-center mb-2">
           <div class="col-auto">
             <img src="/assets/img/fulllogo.png" class="logo">
-            <a href="#" class="d-block text-blue mt-3 mb-2">info@ragdolldynamics.com</a>
+            <a href="/contact.html" class="d-block text-blue mt-3 mb-2">info@ragdolldynamics.com</a>
           </div>
         </div>
-        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-3 text-blue">
           <div class="col-auto">
             <ul class="nav">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" target="_blank" class="nav-link">
                   <img class="icon " src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" target="_blank" class="nav-link">
                   <img class="icon " src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" target="_blank" class="nav-link">
                   <img class="icon " src="assets/img/icons/social/linkedin.svg" alt="linkedin social icon" data-inject-svg />
                 </a>
               </li>
@@ -470,8 +533,6 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-
-    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
     <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
     <script type="text/javascript" src="assets/js/aos.js"></script>
