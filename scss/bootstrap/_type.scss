@@ -28,7 +28,11 @@ h4, .h4 {
   text-transform: uppercase;
 }
 h5, .h5 { @include font-size($h5-font-size); }
-h6, .h6 { @include font-size($h6-font-size); }
+h6, .h6 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
 .lead {
   font-size: 16px;

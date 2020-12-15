@@ -37,7 +37,7 @@
 section.bg-primary {
   svg {
     path {
-      fill: $primary-2 !important;
+      fill: $primary-3 !important;
     }
   }
 }
@@ -45,7 +45,31 @@ section.bg-primary {
 section.bg-primary-2 {
   svg {
     path {
-      fill: $primary !important;
+      fill: #000 !important;
+    }
+  }
+}
+
+section.bg-primary-3 {
+  svg {
+    path {
+      fill: #000 !important;
+    }
+  }
+}
+
+#examples {
+  svg {
+    path {
+      fill: $primary-3 !important;
+    }
+  }
+}
+
+#home {
+  svg {
+    path {
+      fill: $primary-2 !important;
     }
   }
 }

@@ -55,3 +55,22 @@ svg{
     }
   }
 }
+
+.text-blue {
+  svg.icon{
+    &:not([class*='bg-']){
+      *{
+        fill: $theme-blue !important;
+      }
+    }
+  }
+}
+.text-gold {
+  svg.icon{
+    &:not([class*='bg-']){
+      *{
+        fill: $theme-gold !important;
+      }
+    }
+  }
+}

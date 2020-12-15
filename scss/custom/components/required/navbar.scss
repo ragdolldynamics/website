@@ -111,7 +111,8 @@
 nav[data-overlay].navbar-toggled-show{
   background: $white;
   &.navbar-dark{
-    background: theme-color('primary-3');
+    background: theme-color('primary');
+    padding-bottom: 100vh;
     .dropdown-item{
       color: rgba($white,.5);
       &:hover{
