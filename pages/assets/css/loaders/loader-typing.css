@@ -6,7 +6,7 @@
 }
 body > div.loader{
         position: fixed;
-        background: white;
+        background: $primary-2;
         width: 100%;
         height: 100%;
         z-index: 1071;
