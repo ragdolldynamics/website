@@ -13,14 +13,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Build
-        run: |
-          npm install -g gulp-cli
-          npm install
-          gulp build
 
+      # Setup nodejs
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '15'
+
+      # Static site generator
+      - run: npm install -g gulp-cli
+      - run: npm install
+
+      # Build the site
+      - name: Gulp Build
+        run: gulp build
+  
+      # Go!
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
