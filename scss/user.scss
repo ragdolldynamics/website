@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #page {
   .text-blue { color: $theme-blue; }
   .text-gold { color: $theme-gold; }
