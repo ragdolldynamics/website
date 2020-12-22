@@ -1,0 +1,37 @@
+name: Ragbuild
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      # Setup nodejs
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '15'
+
+      # Static site generator
+      - run: npm install -g gulp-cli
+      - run: npm install
+
+      # Build the site
+      - name: Gulp Build
+        run: gulp build
+  
+      # Go!
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages  # deploying branch
