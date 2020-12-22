@@ -1,5 +1,19 @@
+$button-text-color: #222;
+
 html {
   scroll-behavior: smooth;
+}
+
+section h1 {
+  font-size: 5em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#realtimephysics h1 {
+    font-size: 3em !important;
+    font-weight: 600 !important;
+    line-height: 50px !important;
 }
 
 #page {
@@ -25,23 +39,56 @@ html {
   }
 }
 
+.container {
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.vertical-flip {
+  scale: -1;
+}
+
 #features .decoration svg, #exp .decoration svg {
   path {
     fill: $primary-2 !important;
   }
 }
 
+video.fill-width {
+  width: 100%;
+}
+
+p.mid-section-spacing {
+  margin-top: 100px;
+}
+
 .logo {
   width: 46px;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+
 .large-logo {
-  width: 245px;
+  width: 100%;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
 }
 
 .btn-green {
+  border-bottom: 5px solid darken($theme-green, 15%);
   background: $theme-green;
-  color: #fff;
+  color: $button-text-color;
   > .icon{
     path{
       fill: #fff;
@@ -54,8 +101,9 @@ html {
 }
 
 .btn-green-dark {
+  border-bottom: 5px solid darken($theme-green, 15%);
   background: $theme-green;
-  color: $primary;
+  color: $button-text-color;
   > .icon{
     path{
       fill: $primary;
@@ -67,8 +115,9 @@ html {
 }
 
 .btn-rust {
+  border-bottom: 5px solid darken($theme-rust, 15%);
   background: $theme-rust;
-  color: $primary;
+  color: $button-text-color;
   > .icon{
     path{
       fill: $primary;
@@ -79,9 +128,25 @@ html {
   }
 }
 
+.btn-white{
+  border-bottom: 5px solid darken(#eee, 15%);
+  background: #eee;
+  color: theme-color('primary-2');
+  > .icon{
+    path{
+      fill: theme-color('primary-2');
+    }
+  }
+  &:hover{
+    color: theme-color('primary-2');
+    background: lighten($theme-salmon, 5%);
+  }
+}
+
 .btn-gold {
+  border-bottom: 5px solid darken($theme-gold, 15%);
   background: $theme-gold;
-  color: $primary;
+  color: $button-text-color;
   > .icon{
     path{
       fill: $primary;
@@ -93,8 +158,9 @@ html {
 }
 
 .btn-salmon {
+  border-bottom: 5px solid darken($theme-salmon, 15%);
   background: $theme-salmon;
-  color: $primary;
+  color: $button-text-color;
   > .icon{
     path{
       fill: $primary;
@@ -106,8 +172,9 @@ html {
 }
 
 .btn-blue {
+  border-bottom: 5px solid darken($theme-blue, 15%);
   background: $theme-blue;
-  color: $primary;
+  color: $button-text-color;
   > .icon{
     path{
       fill: $primary;
@@ -145,12 +212,12 @@ html {
   background-image: url('/assets/img/video_bg.jpg');
   background-size: cover;
 
-  h1 {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 400;
-    max-width: 250px;
-  }
+  // h1 {
+  //   font-size: 24px;
+  //   line-height: 32px;
+  //   font-weight: 400;
+  //   max-width: 250px;
+  // }
 }
 
 .home-lead {
@@ -166,7 +233,7 @@ html {
     }
 
     img, video {
-      max-width: 80%;
+      max-width: 100%;
       @media screen and (max-width: 768px) {
         max-width: 100%;
       }
