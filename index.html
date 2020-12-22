@@ -32,151 +32,228 @@
             <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
           </button>
           <div class="collapse navbar-collapse justify-content-end">
+
             <div class="py-2 py-lg-0">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="https://learn.ragdolldynamics.com/overview/" class="nav-link text-gold">Learn 🔗</a>
+                  <a href="https://learn.ragdolldynamics.com/overview/" class="nav-link text-gold">Learn</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/pricing" class="nav-link text-green">Pricing</a>
+                  <a href="https://forums.ragdolldynamics.com" class="nav-link text-green">Forums</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/contact" class="nav-link text-rust">Contact</a>
+                  <a href="/contact" class="nav-link text-rust">About</a>
                 </li>
               </ul>
-            </div><a href="#" class="btn btn-white ml-lg-3">Download</a>
+            </div><a href="/pricing" class="btn btn-white ml-lg-2">Pricing</a>
 
           </div>
         </div>
       </nav>
     </div>
 
-    <div data-overlay class="bg-primary-2 text-light o-hidden position-relative jarallax" id="home" data-jarallax-video="mp4:/assets/video/driving.mp4">
-      <section class="min-vh-50 o-hidden d-flex flex-column justify-content-center mb-6 pl-2 pl-sm-0">
+    <div data-overlay class="bg-primary-2 text-light o-hidden position-relative" id="home" data-jarallax-video="mp4:/assets/video/body.mp4">
+      <section class="min-vh-100 o-hidden d-flex flex-column mb-4 pl-2 pl-sm-0" style="padding-top: 0px; margin-top: -120px">
         <div class="container">
-          <div class="row justify-content-center text-left align-items-center">
-            <div class="col-12 layer-3" data-aos="fade-up" data-aos-delay="500">
-              <img src="/assets/img/ragdoll_logotype.png" class="large-logo" alt="Ragdoll">
-              <div class="mt-3 mb-3">
-                <h1>
-                  Real-time physics for Autodesk Maya 2020
-                </h1>
+          <div class="row text-left">
+            <div class="layer-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-6" id="realtimephysics">
+                <h1>REAL-TIME<br>PHYSICS<br>FOR MAYA</h1>
               </div>
-              <a href="#examples" class="btn btn-blue" data-smooth-scroll>Examples</a>
-              <a href="#features" class="btn btn-white mx-2" data-smooth-scroll>Features</a>
+
+              <br>
+
+              <div class="col-6" data-aos="fade-up">
+                  Ragdoll enables animators to <strong>work directly with live physics</strong> in their character rigs, at a 0-5 ms/frame performance impact.
+              </div>
+
+              <br>
+
+              <div class="col-6" data-aos="fade-up">
+                <a href="#body" class="margin-right margin-bottom btn btn-blue" data-smooth-scroll>Body</a>
+                <a href="#hair" class="margin-right margin-bottom btn btn-green-dark" data-smooth-scroll>Hair</a>
+                <a href="#cloth" class="margin-right margin-bottom btn btn-salmon" data-smooth-scroll>Cloth</a>
+                <a href="#muscle" class="margin-right margin-bottom btn btn-rust" data-smooth-scroll>Muscle</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <div class="divider">
-        <img src="assets/img/dividers/divider-1.svg" alt="graphical divider" data-inject-svg />
+        <img src="assets/img/dividers/divider-1.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
       </div>
+
     </div>
 
-    <section class="bg-primary-2 text-light o-hidden has-divider" id="examples">
-      <div class="decoration-wrapper d-none d-lg-block">
-        <div class="decoration middle-y right" data-jarallax-element="50 0">
-          <img class="bg-primary" src="/assets/img/blob-5.svg" alt="decoration" data-inject-svg />
+    <div class="container">
+      <p class="mid-section-spacing"></p>
+      <div class="flex row justify-content-center">
+        <div class="col-4" data-aos="fade-up">
+            <h1 id="logo"><img src="/assets/img/ragdolldynamicsaligned.png" class="large-logo" alt="Ragdoll"></h1>
+            <p>
+              An <strong>Autodesk Maya</strong> plug-in for feature film and games animators on <i>Windows</i> and <i>Linux</i>.
+            </p>
+
+            <a href="https://learn.ragdolldynamics.com/overview" class="margin-right margin-bottom btn btn-green-dark">Documentation</a>
+            <a href="https://forums.ragdolldynamics.com" class="margin-right margin-bottom btn btn-blue">Forums</a>
+
         </div>
-        <div class="decoration top" data-jarallax-element="-40 0">
-          <img class="bg-primary" src="/assets/img/blob-1.svg" alt="decoration" data-inject-svg />
+        <div class="col-6" data-aos="fade-up">
+            <video class="fill-width" poster="/assets/img/examples-4.png" playsinline autoplay muted loop hideControls>
+              <source src="/assets/video/ragdolldrivingweb3.mp4" type="video/mp4" />
+            </video>
         </div>
       </div>
+      <p class="mid-section-spacing"></p>
+    </div>
 
-      <div class="container">
-        <div class="row justify-content-center text-center mb-6">
-          <div class="col-xl-8 col-lg-9">
-            <p class="home-lead">
-              Ragdoll enables animators to <strong>work directly with live physics</strong> in their character rigs, at a 0-5 ms per frame performance impact.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-11" data-aos="fade-up">
-            <div class="tab-content">
-              <div class="tab-pane fade show active" id="examples-tab-1" role="tabpanel" aria-labelledby="examples-tab-1">
-                <video poster="/assets/img/examples-1.png" playsinline autoplay muted loop hideControls>
-                  <source src="/assets/video/rigid.mp4" type="video/mp4" />
-                </video>
+    <div data-overlay class="bg-primary-2 text-light o-hidden position-relative jarallax" data-jarallax-video="mp4:/assets/video/driving.mp4">
+      
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
+      </div>
 
-                <div class="info">
-                  <h6 class="text-green">Body</h6>
-                  <p>Animate like it's 1999, or leverage <strong>Full Body Dynamics</strong> to automate the vast majority of overlapping animation that even respond to changes in environment and interacts with other characters. <strong>Your choice.</strong></p>
-                </div>
-
-              </div>
-              <div class="tab-pane fade" id="examples-tab-2" role="tabpanel" aria-labelledby="examples-tab-2">
-                <video poster="/assets/img/examples-2.png" playsinline autoplay muted loop hideControls>
-                  <source src="/assets/video/justagirl.mp4" type="video/mp4" />
-                </video>
-
-                <div class="info">
-                  <h6 class="text-blue">Hair</h6>
-                  <p>Animate each individual strand, respond to the overall motion of the body and take care not to intersect. Or, <strong>animate with physically accurate hair in real-time</strong>. Your choice.</p>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="examples-tab-3" role="tabpanel" aria-labelledby="examples-tab-3">
-                <video poster="/assets/img/examples-3.png" playsinline autoplay muted loop hideControls>
-                  <source src="/assets/video/mgirl.mp4" type="video/mp4" />
-                </video>
-                <div class="info">
-                  <h6 class="text-rust">Cloth</h6>
-                  <p>Imagine what cloth will eventually look like weeks after you’re finished animating, or work with it directly as you animate. <strong>Your choice.</strong></p>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="examples-tab-4" role="tabpanel" aria-labelledby="examples-tab-4">
-                <video poster="/assets/img/examples-4.png" playsinline autoplay muted loop hideControls>
-                  <source src="/assets/video/muscle.mp4" type="video/mp4" />
-                </video>
-                <div class="info">
-                  <h6 class="text-salmon">Muscles</h6>
-                  <p>Suffer the performance impact of corrective blendshapes and pray that the subsequent muscle simulation won’t mess up the silhouette of your finished animation. Or, <strong>work with muscles directly as you animate</strong>. Your choice.</p>
-                </div>
-              </div>
+      <section id="body" class="min-vh-100 o-hidden d-flex flex-column mb-4 pl-2 pl-sm-0">
+        <div class="container">
+          <div class="text-center justify-content-center">
+            <div class="mt-3 mb-3">
+              <h1>Body</h1>
             </div>
           </div>
         </div>
-
-        <div class="row justify-content-center mt-3 mb-5" id="examples-nav">
-          <div class="col-xl-11">
-            <ul class="nav justify-content-center" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link px-2 active" href="#examples-tab-1" data-toggle="tab" role="tab" aria-controls="examples-tab-1" aria-selected="true">
-                  <div class="btn btn-green-dark">Body</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-2" href="#examples-tab-2" data-toggle="tab" role="tab" aria-controls="examples-tab-2" aria-selected="false">
-                  <div class="btn btn-blue">Hair</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-2" href="#examples-tab-3" data-toggle="tab" role="tab" aria-controls="examples-tab-3" aria-selected="false">
-                  <div class="btn btn-rust">Cloth</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-2" href="#examples-tab-4" data-toggle="tab" role="tab" aria-controls="examples-tab-3" aria-selected="false">
-                  <div class="btn btn-salmon">Muscles</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <div class="divider">
-        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+        <img src="assets/img/dividers/divider-1.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
       </div>
-    </section>
 
-    <section class="bg-primary-3 has-divider" id="features">
-      <div class="decoration-wrapper d-none d-lg-block">
-        <div class="decoration top-8 left" data-jarallax-element="20 0">
-          <img class="bg-primary-2" src="/assets/img/blob-3.svg" alt="decoration" data-inject-svg />
+    </div>
+
+    <div class="container">
+      <p class="mid-section-spacing"></p>
+      <div class="row justify-content-center">
+        <div class="col-6" data-aos="fade-up">
+          <h3 class="text-green">Body</h3>
+          <p>Animate like it's 1999, or leverage <strong>Full Body Dynamics</strong> to automate the vast majority of overlapping animation that even respond to changes in environment and interacts with other characters.
+            <br><br><strong>Your choice.</strong></p>
         </div>
       </div>
+      <p class="mid-section-spacing"></p>
+    </div>
 
+    <div data-overlay class="bg-primary-2 text-light o-hidden position-relative jarallax" data-jarallax-video="mp4:/assets/video/hair.mp4">
+      
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
+      </div>
+
+      <section id="hair" class="min-vh-100 o-hidden d-flex flex-column mb-4 pl-2 pl-sm-0">
+        <div class="container">
+          <div class="text-center justify-content-center">
+            <div class="mt-3 mb-3">
+              <h1>Hair</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider">
+        <img src="assets/img/dividers/divider-1.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
+      </div>
+
+    </div>
+
+    <div class="container">
+      <p class="mid-section-spacing"></p>
+      <div class="row justify-content-center">
+        <div class="col-6" data-aos="fade-up">
+          <h3 class="text-blue">Hair</h3>
+          <p>
+            Animate each individual strand, respond to the overall motion of the body and take care not to intersect. Or, animate with physically accurate hair in real-time.
+            <br><br>
+            <strong>Your choice.</strong>
+          </p>
+        </div>
+      </div>
+      <p class="mid-section-spacing"></p>
+    </div>
+
+    <div id="cloth" data-overlay class="bg-primary-2 text-light o-hidden position-relative jarallax" data-jarallax-video="mp4:/assets/video/cloth.mp4">
+
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
+      </div>
+
+      <section id="cloth" class="min-vh-100 o-hidden d-flex flex-column mb-4 pl-2 pl-sm-0">
+        <div class="container">
+          <div class="text-center justify-content-center">
+            <div class="mt-3 mb-3">
+              <h1>Cloth</h1>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider">
+        <img src="assets/img/dividers/divider-1.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
+      </div>
+
+    </div>
+
+    <div class="container">
+      <p class="mid-section-spacing"></p>
+      <div class="row justify-content-center">
+        <div class="col-6" data-aos="fade-up">
+          <h3 class="text-rust">Cloth</h3>
+          <p>
+            Imagine what cloth will eventually look like weeks after you’re finished animating, or work with it directly as you animate.
+            <br><br>
+            <strong>Your choice.</strong>
+          </p>
+        </div>
+      </div>
+      <p class="mid-section-spacing"></p>
+    </div>
+
+    <div id="muscle" data-overlay class="bg-primary-2 text-light o-hidden position-relative jarallax" data-jarallax-video="mp4:/assets/video/muscle.mp4">
+
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
+      </div>
+
+      <section id="muscle" class="min-vh-100 o-hidden d-flex flex-column mb-4 pl-2 pl-sm-0">
+        <div class="container">
+          <div class="text-center justify-content-center">
+            <div class="mt-3 mb-3">
+              <h1>Muscle</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider">
+        <img src="assets/img/dividers/divider-1.svg" class="bg-primary-2" alt="graphical divider" data-inject-svg />
+      </div>
+
+    </div>
+
+    <div class="container">
+      <p class="mid-section-spacing"></p>
+      <div class="row justify-content-center">
+        <div class="col-6" data-aos="fade-up">
+          <h3 class="text-salmon">Muscles</h3>
+          <p>Suffer the performance impact of corrective blendshapes and pray that the subsequent muscle simulation won’t mess up the silhouette of your finished animation. Or, work with muscles directly as you animate.
+            <br><br><strong>Your choice.</strong></p>
+        </div>
+      </div>
+      <p class="mid-section-spacing"></p>
+    </div>
+
+    <div class="divider">
+      <img src="assets/img/dividers/divider-1.svg" class="bg-primary-3" alt="graphical divider" data-inject-svg />
+    </div>
+
+    <section class="bg-primary-3 has-divider" id="features">
       <div class="container pb-0 text-light">
         <div class="row justify-content-center text-center mb-6">
           <div class="col-xl-8 col-lg-9">
@@ -185,116 +262,115 @@
         </div>
       </div>
 
-      <div class="container py-0 o-hidden">
-        <div class="controls-light controls-outside mb-6" data-flickity='{ "autoPlay": false, "imagesLoaded": true, "wrapAround": true, "groupCells": true }'>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-blue">Performance</h6>
-                <p class="text-white">
-                  0-5 ms/frame, <strong>from a single box to a full character</strong> with skeleton, hair, cloth and muscles running in parallel with native and interactive forwards and backwards caching, with additional support for Cached Playback in Maya 2020+.
-                </p>
-              </div>
+      <div class="container flex">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-blue">Performance</h6>
+              <p class="text-white">
+                Multi-threaded C++ library running @ 0-5 ms/frame, from a single box to a <strong>full character</strong> with skeleton, hair, cloth and muscles.
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-1.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-green">Stability</h6>
-                <p class="text-white">
-                  <strong>Simulate anything</strong> from anatomically correct skeletons to complex mechanical contraptions.
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-1.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-green">Stability</h6>
+              <p class="text-white">
+                <strong>Simulate anything</strong> from anatomically correct skeletons to complex mechanical contraptions.
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-2.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-grey">Collision Detection</h6>
-                <p class="text-white">
-                  Exactly what would would expect from any self-respecting <strong>physics solver.</strong>
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-2.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-grey">Collision Detection</h6>
+              <p class="text-white">
+                Exactly what would would expect from any self-respecting <strong>physics solver.</strong>
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-3.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-gold">Constraints</h6>
-                <p class="text-white">
-                  Point, Orient and Parent constraints; <strong>just like regular Maya constraints, except physical!</strong>
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-3.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-gold">Constraints</h6>
+              <p class="text-white">
+                Point, Orient and Parent constraints; <strong>just like regular Maya constraints, except physical!</strong>
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-4.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-salmon">Rewind & Continue</h6>
-                <p class="text-white">
-                  Play forwards and backwards without ever having to worry about returning to frame 1. <strong>Suck on that, nCloth!</strong>
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-4.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-salmon">Rewind & Continue</h6>
+              <p class="text-white">
+                Play forwards and backwards without ever having to worry about returning to frame 1.
+                <br><strong>Suck on that, nCloth!</strong>
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-5.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-rust">Natural Forces</h6>
-                <p class="text-white">
-                  Push, Pull and Turbulence for <strong>perfect integration into any environment.</strong>
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-5.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-rust">Natural Forces</h6>
+              <p class="text-white">
+                Push, Pull and Turbulence for <strong>perfect integration into any environment.</strong>
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-6.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-blue">Active Control</h6>
-                <p class="text-white">
-                  Balance animation and physics with life-like control over <strong>“virtual muscles”</strong>.
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-6.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-blue">Active Control</h6>
+              <p class="text-white">
+                Balance animation and physics with life-like control over <strong>“virtual muscles”</strong>.
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-7.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-green">Anatomical Limits</h6>
-                <p class="text-white">
-                  <strong>Precise control</strong> over the angle each limb or chain can attain.
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-7.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-green">Anatomical Limits</h6>
+              <p class="text-white">
+                <strong>Precise control</strong> over the angle each limb or chain can attain.
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-8.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-grey">Determinism</h6>
-                <p class="text-white">
-                  Trust that <strong>every playthrough is identical</strong> to the last, even on different machines and operating systems.
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-8.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-grey">Determinism</h6>
+              <p class="text-white">
+                Trust that <strong>every playthrough is identical</strong> to the last, even across different machines.
+              </p>
             </div>
           </div>
-          <div class="carousel-cell col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
-            <div class="d-flex">
-              <div class="process-circle"><img src="/assets/img/icon-9.svg"></div>
-              <div class="ml-2 mt-2">
-                <h6 class="text-gold">Python API</h6>
-                <p class="text-white">
-                  <strong>Precise integration</strong> into your pipeline with this first-class API, built with the fast and flexible cmdx.
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 pb-1">
+          <div class="d-flex">
+            <div class="process-circle"><img src="/assets/img/icon-9.svg"></div>
+            <div class="ml-2 mt-2">
+              <h6 class="text-gold">Python API</h6>
+              <p class="text-white">
+                <strong>Precise integration</strong> into your pipeline with a first-class API, built on-top of the Maya Python API 2.0 for optimal performance.
+              </p>
             </div>
           </div>
         </div>
@@ -324,22 +400,72 @@
             </p>
           </div>
         </div>
-        <div class="row align-items-center">
-          <div class="col">
+        <div class="container flex">
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
             <img class="px-0 px-md-3" src="/assets/img/exp1.png" alt="Brand">
           </div>
-          <div class="col">
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
             <img class="px-0 px-md-3" src="/assets/img/exp2.png" alt="Brand">
           </div>
-          <div class="col">
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
             <img class="px-0 px-md-3" src="/assets/img/exp3.png" alt="Brand">
           </div>
-          <div class="col">
-            <img class="px-0 px-md-3" src="/assets/img/exp1.png" alt="Brand">
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp4.png" alt="Brand">
           </div>
-          <div class="col">
-            <img class="px-0 px-md-3" src="/assets/img/exp2.png" alt="Brand">
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp5.png" alt="Brand">
           </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp6.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp8.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp9.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp10.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp11.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <div style="background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDBweCIgaGVpZ2h0PSIzNXB4IiB2aWV3Qm94PSIwIDAgNDAgMzUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU4ICg4NDY2MykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+bG9nbzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJTcHJpbnQtNS42IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQ2FzZXN0dWR5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuMDAwMDAwLCAtMjAuMDAwMDAwKSIgZmlsbD0iI2ZmZmZmZiI+CiAgICAgICAgICAgIDxnIGlkPSJOYXYtYmxhY2siPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTYwLDIwIEw2MCw1NC4wNDI1NTMyIEw1NC4wNDI1NTMyLDU0LjA0MjU1MzIgTDU0LjA0MjU1MzIsMjAgTDYwLDIwIFogTTUzLjE5MTQ4OTQsMjAgTDUzLjE5MTQ4OTQsNTQuMDQyNTUzMiBMNDcuMjM0MDQyNiw1NC4wNDI1NTMyIEw0Ny4yMzQwNDI2LDIwIEw1My4xOTE0ODk0LDIwIFogTTI1Ljk1NzQ0NjgsMjcuNjU5NTc0NSBMMjUuOTU3NDQ2OCw1NC4wNDI1NTMyIEwyMCw1NC4wNDI1NTMyIEwyMCwyNy42NTk1NzQ1IEwyNS45NTc0NDY4LDI3LjY1OTU3NDUgWiBNMzIuNzY1OTU3NCwyNy42NTk1NzQ1IEwzMi43NjU5NTc0LDU0LjA0MjU1MzIgTDI2LjgwODUxMDYsNTQuMDQyNTUzMiBMMjYuODA4NTEwNiwyNy42NTk1NzQ1IEwzMi43NjU5NTc0LDI3LjY1OTU3NDUgWiBNMzkuNTc0NDY4MSwyNy42NTk1NzQ1IEwzOS41NzQ0NjgxLDU0LjA0MjU1MzIgTDMzLjYxNzAyMTMsNTQuMDQyNTUzMiBMMzMuNjE3MDIxMywyNy42NTk1NzQ1IEwzOS41NzQ0NjgxLDI3LjY1OTU3NDUgWiBNNDYuMzgyOTc4NywyNy42NTk1NzQ1IEw0Ni4zODI5Nzg3LDU0LjA0MjU1MzIgTDQwLjQyNTUzMTksNTQuMDQyNTUzMiBMNDAuNDI1NTMxOSwyNy42NTk1NzQ1IEw0Ni4zODI5Nzg3LDI3LjY1OTU3NDUgWiIgaWQ9ImxvZ28iPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==); height: 44px; background-repeat: no-repeat; background-position: center;"></div>
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp13.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp14.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp15.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp16.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp17.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp18.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp19.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp20.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp21.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp22.png" alt="Brand">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 col-12 pb-1">
+            <img class="px-0 px-md-3" src="/assets/img/exp23.png" alt="Brand">
           </div>
         </div>
       </div>
@@ -347,7 +473,7 @@
         <a href="/contact" class="btn btn-rust">Contact Us</a>
       </div>
       <div class="divider">
-        <img src="assets/img/dividers/divider-2.svg" alt="divider graphic" data-inject-svg />
+        <img src="assets/img/dividers/divider-1.svg" alt="divider graphic" data-inject-svg />
       </div>
     </section>
 
@@ -484,12 +610,11 @@
       <div class="text-center mb-6 pb-5">
         <a href="https://learn.ragdolldynamics.com/overview/" class="btn btn-gold">View All Tutorials</a>
       </div>
+
       <div class="divider">
         <img src="assets/img/dividers/divider-3.svg" alt="graphical divider" data-inject-svg />
       </div>
     </section>
-
-
 
     <footer class="pb-4 bg-primary text-light text-center" id="footer">
       <div class="container">
@@ -529,7 +654,7 @@
         </div>
       </div>
     </footer>
-    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="200" data-aos-mirror="true" data-aos-once="false">
       <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
     </a>
     <!-- Required vendor scripts (Do not remove) -->
