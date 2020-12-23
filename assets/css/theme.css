@@ -14272,6 +14272,12 @@ section h1 {
   margin-top: auto;
   margin-bottom: auto; }
 
+.text-very-small {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-bottom: 3px;
+  padding-left: 10px; }
+
 #realtimephysics h1 {
   font-size: 3em !important;
   font-weight: 600 !important;
@@ -14389,7 +14395,7 @@ p.mid-section-spacing {
     fill: #131313; }
   .btn-white:hover {
     color: #131313;
-    background: #f9d0c9; }
+    background: white !important; }
 
 .btn-gold {
   border-bottom: 5px solid #a49647;
@@ -14421,6 +14427,10 @@ p.mid-section-spacing {
 .btn-aligner {
   position: absolute;
   bottom: 24px; }
+
+.card--pricing:hover .btn-green {
+  background-color: #afead7;
+  color: white; }
 
 .contact-top {
   padding-top: 150px !important; }
