@@ -10,6 +10,13 @@ section h1 {
   margin-bottom: auto;
 }
 
+.text-very-small {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+
 #realtimephysics h1 {
     font-size: 3em !important;
     font-weight: 600 !important;
@@ -139,7 +146,7 @@ p.mid-section-spacing {
   }
   &:hover{
     color: theme-color('primary-2');
-    background: lighten($theme-salmon, 5%);
+    background: white !important;
   }
 }
 
@@ -190,6 +197,16 @@ p.mid-section-spacing {
   bottom: 24px;
 }
 
+// .card .btn.btn-green:hover {
+//   background: #afead7;
+//   color: #333;
+// }
+
+.card--pricing:hover .btn-green {
+    background-color: #afead7;
+    color: white;
+}
+
 .contact-top {
   padding-top: 150px !important;
 
@@ -207,18 +224,11 @@ p.mid-section-spacing {
   color: #fff;
   font-weight: 400;
 }
-
 #home {
   background-image: url('/assets/img/video_bg.jpg');
   background-size: cover;
-
-  // h1 {
-  //   font-size: 24px;
-  //   line-height: 32px;
-  //   font-weight: 400;
-  //   max-width: 250px;
-  // }
 }
+
 
 .home-lead {
   max-width: 550px;
