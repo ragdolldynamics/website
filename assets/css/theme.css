@@ -14448,6 +14448,32 @@ p.mid-section-spacing {
   background-image: url("/assets/img/video_bg.jpg");
   background-size: cover; }
 
+#home-section {
+  padding-top: 0px !important;
+  margin-top: -120px !important; }
+  @media screen and (max-width: 500px) {
+    #home-section {
+      padding-top: 120px !important; }
+      #home-section .margin-right {
+        margin-right: 2px; }
+      #home-section .justify-content-center {
+        flex-direction: column; } }
+
+@media screen and (max-width: 500px) {
+  .gbk {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important; }
+  .experience {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .col-6, .col-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important; }
+  .row:not(.no-gutters) > [class*="col-6"]:nth-child(2n) {
+    padding-left: 12px; } }
+
 .home-lead {
   max-width: 550px;
   margin: 0 auto; }
