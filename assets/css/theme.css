@@ -14281,7 +14281,8 @@ section h1 {
 #realtimephysics h1 {
   font-size: 3em !important;
   font-weight: 600 !important;
-  line-height: 50px !important; }
+  line-height: 50px !important;
+  white-space: nowrap; }
 
 #page .text-blue {
   color: #B2D9F6; }
@@ -14451,15 +14452,25 @@ p.mid-section-spacing {
 #home-section {
   padding-top: 0px !important;
   margin-top: -120px !important; }
+  #home-section #comingsoon {
+    width: 50%;
+    max-width: 70%;
+    margin-top: auto;
+    margin-bottom: auto; }
   @media screen and (max-width: 500px) {
     #home-section {
       padding-top: 120px !important; }
+      #home-section #comingsoon {
+        padding-top: 30px; }
       #home-section .margin-right {
         margin-right: 2px; }
       #home-section .justify-content-center {
         flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
+  .pl-2,
+  .px-2 {
+    padding-left: inherit !important; }
   .gbk {
     padding-top: 30px !important;
     padding-bottom: 30px !important; }
