@@ -13,25 +13,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+    
+    # Setup mkdocs
+    - run: python -m pip install mkdocs libsass
 
-      # Setup nodejs
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '15'
+    # Build
+    - run: PYTHONPATH=$(pwd)/plugins mkdocs build --site-dir dist/
 
-      # Static site generator
-      - run: npm install -g gulp-cli
-      - run: npm install
-
-      # Build the site
-      - name: Gulp Build
-        run: gulp build
-  
-      # Go!
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages  # deploying branch
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        publish_branch: gh-pages  # deploying branch
