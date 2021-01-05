@@ -24,6 +24,7 @@ jobs:
 
     # Build
     - run: PYTHONPATH=$(pwd)/plugins mkdocs build --site-dir dist/
+    - run: cp ./CNAME ./site/
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
