@@ -166,7 +166,7 @@
         <p class="mid-section-spacing"></p>
         <div class="row justify-content-center">
         <div class="col-6" data-aos="fade-up">
-          <h3 class="text-blue">Hair</h3>
+          <h3 class="text-blue">Muscle</h3>
               <p>Suffer the performance impact of corrective blendshapes and pray that the subsequent muscle simulation won’t mess up the silhouette of your finished animation. Or, work with muscles directly as you animate.
                 <br><br><strong>Your choice.</strong></p>
         </div>
