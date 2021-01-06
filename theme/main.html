@@ -5,6 +5,8 @@
     {% block site_meta %}
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Ragdoll Dynamics | Real-time physics for Autodesk Maya 2020</title>
+      
       {% if page and page.meta.description %}
         <meta name="description" content="{{ page.meta.description | first }}">
       {% elif config.site_description %}
@@ -17,9 +19,13 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
 
       <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon.png?v=2">
-      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/{{ config.extra.favicon }}-32x32.png?v=2">
-      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/{{ config.extra.favicon }}-16x16.png?v=2">
-      <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#202020">
+
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png?v=2">
+
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png?v=2">
+
+      <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg?v=2" color="#202020">
+
       <meta name="msapplication-TileColor" content="#2b5797">
 
       <link rel="manifest" href="/site.webmanifest?v=2">
